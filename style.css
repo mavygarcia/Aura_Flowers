@@ -1,0 +1,130 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: sans-serif;
+	outline:none;
+	border:none;
+	transition:.2s linear;
+	
+}
+html{
+	font-size:62.5%;
+	scroll-behavior:smooth;
+	scroll-padding-top:6rem;
+	overflow-x:hidden;
+}
+body{
+	background-color:#fce4ec;
+	color:#333;
+}
+section{
+	padding: 2rem;
+}
+.headerContainer {
+	display:flex;
+	align-items: center;
+}
+header{
+	position:relative;
+	top:0; 
+	left:0; 
+	right:0;
+	background-color:#fff;
+	padding:2rem;
+	display:flex;
+	align-items:center;
+	text-align:center;
+	justify-content: space-between;
+	z-index:1000;
+	box-shadow:0.5rem 1 rem rgba(0,0,0,.1);
+
+}
+.logo{
+	font-size:40px;
+	color:#FFB6C1;
+	font-weight:bolder;
+	margin-right:auto;
+	
+}
+.logo span{
+	color:#000000;
+}
+.navbar{
+	transform:translateX(-50%);
+	position:absolute;
+	left:50%;
+	display:flex;
+	gap:20px;
+	list-style:none;
+}
+.navbar a{
+	font-family:Didot, serif;
+	font-size:20px;
+	padding:0 0.5rem;
+	color:#666;
+	text-decoration:none;
+}
+.navbar a:hover{
+	color:#FFB6C1;
+}
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../img/fundo2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.container{
+	text-align:left;
+	float:left; 
+	width:100vw;
+	margin-left:50px;
+}
+.container h2{
+	
+	font-size:6rem;
+	color:#FFC0CB;
+	font-family:Georgia;
+}
+.container span{
+	font-family:Constantia;
+	font-size:3.5rem;
+	color:pink;
+	padding:1rem 0;
+	line-height:1.5;
+}
+.container p{
+	font-size:1.7rem;
+	color:#999;
+	padding:1rem 0;
+	line-height:1.5;
+}
+
+
+
+
+@media(max-width:768px){
+	header{
+		height:180px;
+		justify-content: center;
+	}
+	.headerContainer{
+		display:block;
+	}
+}
+@media(max-width:425px){
+	header{
+		height:150px;
+		justify-content: center;
+	}
+	.headerContainer {
+		display:block;
+	}
+}
+
+

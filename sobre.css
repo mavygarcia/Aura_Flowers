@@ -1,0 +1,123 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: sans-serif;
+	outline:none;
+	border:none;
+	transition:.2s linear;
+	
+}
+html{
+	font-size:62.5%;
+	scroll-behavior:smooth;
+	scroll-padding-top:6rem;
+	overflow-x:hidden;
+}
+.texto{
+	background-image:url('../img/fundo2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	color:#333;
+	
+  
+}
+body{
+	background-color:#fce4ec;
+	color:#333;
+}
+section{
+	padding: 3rem;
+	
+}
+.headerContainer {
+	display:flex;
+	align-items: center;
+}
+header{
+	position:relative;
+	top:0; 
+	left:0; 
+	right:0;
+	background-color:#fff;
+	padding:2rem;
+	display:flex;
+	align-items:center;
+	text-align:center;
+	justify-content: space-between;
+	z-index:1000;
+	box-shadow:0.5rem 1 rem rgba(0,0,0,.1);
+
+}
+.logo{
+	font-size:40px;
+	color:#FFB6C1;
+	font-weight:bolder;
+	margin-right:auto;
+	
+}
+.logo span{
+	color:#000000;
+}
+.navbar{
+	transform:translateX(-50%);
+	position:absolute;
+	left:50%;
+	display:flex;
+	gap:20px;
+	list-style:none;
+}
+.navbar a{
+	font-family:Didot, serif;
+	font-size:20px;
+	padding:0 0.5rem;
+	color:#666;
+	text-decoration:none;
+}
+.navbar a:hover{
+	color:#FFB6C1;
+}
+
+.texto h1{
+	font-size:32px;
+	text-shadow: 4px 4px 10px rgba(255,255,255, 0.8);
+	padding:10px;
+	margin:10px;
+}
+.texto p, li{
+	text-shadow: 3px 3px 8px rgba(255,255,255, 0.8);
+	font-size:25px;
+	padding:10px;
+	margin:10px;
+}
+ul{
+	margin-left:50px;
+	margin-top:15px;
+}
+.article2{
+	margin-top:20px;
+	
+}
+@media(max-width:768px){
+	header{
+		height:180px;
+		justify-content: center;
+	}
+	.headerContainer {
+		display:block;
+	}
+
+}
+@media(max-width:425px){
+	header{
+		height:150px;
+		justify-content: center;
+	}
+	.headerContainer {
+		display:block;
+
+	}
+}
+
+

@@ -1,0 +1,166 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: sans-serif;
+	outline:none;
+	border:none;
+	transition:.2s linear;
+	
+}
+html{
+	font-size:62.5%;
+	scroll-behavior:smooth;
+	scroll-padding-top:6rem;
+	overflow-x:hidden;
+}
+body{
+	background-color:#fce4ec;
+	color:#333;
+	
+}
+section{
+	width: 100%;
+	height: 100dvh; 
+	display: flex;
+	align-items: center; 
+	justify-content: center; 
+	background-size: cover; 
+	background-position: center;
+}
+	
+
+.headerContainer {
+	display:flex;
+	align-items: center;
+}
+header{
+	position:relative;
+	top:0; 
+	left:0; 
+	right:0;
+	background-color:#fff;
+	padding:2rem;
+	display:flex;
+	align-items:center;
+	text-align:center;
+	justify-content: space-between;
+	z-index:1000;
+	box-shadow:0.5rem 1 rem rgba(0,0,0,.1);
+
+}
+.logo{
+	font-size:40px;
+	color:#FFB6C1;
+	font-weight:bolder;
+	margin-right:auto;
+	
+}
+.logo span{
+	color:#000000;
+}
+.navbar{
+	transform:translateX(-50%);
+	position:absolute;
+	left:50%;
+	display:flex;
+	gap:20px;
+	list-style:none;
+}
+.navbar a{
+	font-family:Didot, serif;
+	font-size:20px;
+	padding:0 0.5rem;
+	color:#666;
+	text-decoration:none;
+}
+.navbar a:hover{
+	color:#FFB6C1;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../img/fundo2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:#333;
+	
+}
+.contato{
+	background-color:pink;
+	width:300px;
+	height:500px;
+	display:flex;
+	justify-content:center;
+	flex-direction: column;
+	align-items:center;
+	border-radius:10px;
+	transition:transform 0.3s;
+	box-shadow: 0px 4px 8px rgba(0,0,0,0.2)
+}
+.container h1{
+	font-size: 2rem;
+	margin-bottom:20px;
+	color:#333;
+}
+.container input{
+	width:100%;
+	padding:10px;
+	border:1px solid #ccc;
+	border-radius:5px;
+	font-size:1rem;
+}
+.container label{
+	font-size:10px;
+	font-family:Georgia, serif;
+	margin-bottom:5px;
+	
+}
+.input-caixa{
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	margin-bottom:15px;
+	width:80%;
+}
+.button{
+	width: 25%;
+    padding: 10px;
+    background-color: #FFB6C1;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button:hover{
+	background-color:#FF8BA0;
+}
+.conta p{
+	font-size:20px;
+}
+	
+
+
+@media(max-width:768px){
+	header{
+		height:180px;
+		justify-content: center;
+	}
+	.headerContainer{
+		display:block;
+	}
+}
+@media(max-width:425px){
+	header{
+		height:150px;
+		justify-content: center;
+	}
+	.headerContainer {
+		display:block;
+	}
+}
